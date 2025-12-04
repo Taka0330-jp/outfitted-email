@@ -1,56 +1,258 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Outfitted Newsletter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="x-apple-disable-message-reformatting">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <style type="text/css">
+    /* ===== RESET ===== */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    img {
+      border: 0;
+      display: block;
+      line-height: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+    }
+
+    body,
+    table,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+    }
+
+    /* ===== LAYOUT / CONTAINER ===== */
+    .wrapper {
+      background-color: #000000;
+    }
+
+    .container {
+      width: 600px;
+      background-color: #000000;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      padding: 16px 24px;
+      background-color: #000000;
+    }
+
+    /* ===== HERO IMAGE ===== */
+    .hero {
+      background-color: #000000;
+    }
+
+    /* ===== HERO TITLE ===== */
+    .hero-title {
+      background-color: #000000;
+      padding: 32px 24px 24px;
+      text-align: center;
+    }
+
+    .hero-title h1 {
+      font-size: 26px;
+      line-height: 1.3;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-title p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #cccccc;
+    }
+
+    /* ===== TOP NAV BUTTONS ===== */
+    .nav-row {
+      padding: 0 24px 24px;
+      background-color: #000000;
+    }
+
+    .nav-row td {
+      padding: 0 14px;
+    }
+
+    .nav-btn {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: center;
+      background-color: #d5ff2f;
+      color: #000000;
+      padding: 10px 16px;
+      border-radius: 3px;
+    }
+
+    /* ===== SECTION TITLE + CTA ===== */
+    .section-title {
+      text-align: center;
+      padding: 24px 24px 12px;
+      background-color: #000000;
+    }
+
+    .section-title h2 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #d5ff2f;
+    }
+
+    .cta-row {
+      background-color: #000000;
+      padding: 0 24px 32px;
+    }
+
+    .primary-btn {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      text-align: center;
+      background-color: #d5ff2f;
+      color: #000000;
+      padding: 12px 24px;
+      border-radius: 3px;
+    }
+
+    /* ===== PRODUCT GRID ===== */
+    .grid-item {
+      background-color: #111111;
+    }
+
+    .grid-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 10px 16px 18px;
+    }
+
+    /* ===== SEE WHAT'S NEW ===== */
+    .see-whats-new {
+      text-align: center;
+      padding: 32px 24px 24px;
+      background-color: #000000;
+    }
+
+    .see-whats-new h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .see-whats-new p {
+      font-size: 13px;
+      color: #cccccc;
+    }
+
+    /* ===== SOCIAL ICONS ===== */
+    .social-row {
+      padding: 12px 24px 24px;
+      background-color: #000000;
+    }
+
+    .social-row td {
+      padding: 0 14px;
+    }
+
+    /* ===== APP BADGES ===== */
+    .store-row {
+      padding: 8px 24px 32px;
+      background-color: #000000;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer-text {
+      padding: 24px;
+      background-color: #000000;
+      font-size: 10px;
+      line-height: 1.5;
+      color: #aaaaaa;
+      text-align: left;
+    }
+
+    .footer-text p {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- Outer Wrapper -->
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="wrapper">
     <tr>
       <td align="center">
 
-        <!-- Main Container (600px) -->
-        <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0">
+        <!-- Main Container -->
+        <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" class="container">
 
           <!-- HEADER (Logo) -->
           <tr>
             <td class="header" align="center">
-              <!-- Add logo image -->
-              <p>LOGO HERE</p>
+              <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/Logo.png" width="120"
+                alt="Outfitted logo" style="display:block;">
             </td>
           </tr>
 
           <!-- HERO IMAGE -->
           <tr>
             <td class="hero" align="center">
-              <!-- Full-width banner image -->
-              <p>HERO IMAGE</p>
+              <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/head-img.png" width="600"
+                alt="Fresh looks hero" style="display:block;">
             </td>
           </tr>
 
           <!-- HERO HEADLINE -->
           <tr>
             <td class="hero-title" align="center">
-              <h1>Fresh Looks For The Season</h1>
-              <p>Your subtitle goes here</p>
+              <h1>Fresh Looks For The Season<br>At Outfitted</h1>
+              <p>New drops, curated edits, and styles picked just for you.</p>
             </td>
           </tr>
 
-          <!-- TOP NAV BUTTONS (Trending / Top Rated / Women / Men) -->
+          <!-- TOP NAV BUTTONS -->
           <tr>
-            <td align="center">
-              <table role="presentation" cellpadding="10" cellspacing="10" border="0">
+            <td class="nav-row" align="center">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td class="nav-btn">TRENDING</td>
-                  <td class="nav-btn">TOP RATED</td>
-                  <td class="nav-btn">WOMEN'S</td>
-                  <td class="nav-btn">MEN'S</td>
+                  <td style="padding-right:8px;">
+                    <div class="nav-btn">TRENDING</div>
+                  </td>
+                  <td style="padding-right:8px;">
+                    <div class="nav-btn">TOP RATED</div>
+                  </td>
+                  <td style="padding-right:8px;">
+                    <div class="nav-btn">WOMEN'S</div>
+                  </td>
+                  <td>
+                    <div class="nav-btn">MEN'S</div>
+                  </td>
                 </tr>
               </table>
             </td>
@@ -58,69 +260,103 @@
 
           <!-- SECTION TITLE -->
           <tr>
-            <td align="center" class="section-title">
+            <td class="section-title" align="center">
               <h2>Your Holiday Style Drop</h2>
               <p>GET INSPIRATIONS</p>
             </td>
           </tr>
 
-          <!-- PRODUCT GRID (2x2) -->
-          <!-- Row 1 -->
+          <!-- CTA BUTTON -->
           <tr>
-            <td>
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+            <td class="cta-row" align="center">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td width="50%" class="grid-item" align="center">
-                    <!-- Image + label -->
-                    <p>IMAGE 1</p>
-                    <p>COZY & LAYERED →</p>
-                  </td>
-                  <td width="50%" class="grid-item" align="center">
-                    <p>IMAGE 2</p>
-                    <p>MINIMAL STREETWEAR →</p>
+                  <td class="primary-btn"
+                    style="background-color:#d5ff2f; padding:12px 24px; border-radius:3px; color:#000000;">
+                    GET INSPIRATIONS
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- Row 2 -->
+          <!-- PRODUCT GRID Row 1 -->
           <tr>
             <td>
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                 <tr>
                   <td width="50%" class="grid-item" align="center">
-                    <p>IMAGE 3</p>
-                    <p>Y2K THROWBACK →</p>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/model-01.png"
+                      width="300" alt="Cozy layered look" style="display:block;">
+                    <p class="grid-label">COZY &amp; LAYERED &rarr;</p>
                   </td>
                   <td width="50%" class="grid-item" align="center">
-                    <p>IMAGE 4</p>
-                    <p>VINTAGE DENIM →</p>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/model-02.png"
+                      width="300" alt="Minimal streetwear" style="display:block;">
+                    <p class="grid-label">MINIMAL STREETWEAR &rarr;</p>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- SEE WHAT’S NEW -->
+          <!-- PRODUCT GRID Row 2 -->
+          <tr>
+            <td>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="50%" class="grid-item" align="center">
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/model-03.png"
+                      width="300" alt="Y2K throwback outfit" style="display:block;">
+                    <p class="grid-label">Y2K THROWBACK &rarr;</p>
+                  </td>
+                  <td width="50%" class="grid-item" align="center">
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/model-04.png"
+                      width="300" alt="Vintage denim look" style="display:block;">
+                    <p class="grid-label">VINTAGE DENIM &rarr;</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- SEE WHAT'S NEW -->
           <tr>
             <td align="center" class="see-whats-new">
-              <h3>See What’s New</h3>
-              <p>Find pieces curated just for your style</p>
+              <h3>See What's New</h3>
+              <p>Find pieces curated just for your style.</p>
             </td>
           </tr>
 
           <!-- SOCIAL ICONS -->
           <tr>
-            <td align="center">
-              <table role="presentation" cellspacing="10" cellpadding="0">
+            <td align="center" class="social-row">
+              <table role="presentation" cellspacing="10" cellpadding="0" border="0">
                 <tr>
-                  <td>IG</td>
-                  <td>Threads</td>
-                  <td>X</td>
-                  <td>Pinterest</td>
-                  <td>YouTube</td>
-                  <td>TikTok</td>
+                  <td>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/IG.png" width="24"
+                      alt="Instagram">
+                  </td>
+                  <td>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/Threads.png"
+                      width="24" alt="Threads">
+                  </td>
+                  <td>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/X.png" width="24"
+                      alt="X">
+                  </td>
+                  <td>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/Pin.png" width="24"
+                      alt="Pinterest">
+                  </td>
+                  <td>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/YT.png" width="24"
+                      alt="YouTube">
+                  </td>
+                  <td>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/TikTok.png"
+                      width="24" alt="TikTok">
+                  </td>
                 </tr>
               </table>
             </td>
@@ -128,20 +364,37 @@
 
           <!-- APP STORE BADGES -->
           <tr>
-            <td align="center">
-              <p>APP STORE BADGE</p>
-              <p>GOOGLE PLAY BADGE</p>
+            <td align="center" class="store-row">
+              <table role="presentation" cellpadding="8" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/apple-badge.png"
+                      width="135" alt="Download on the App Store">
+                  </td>
+                  <td>
+                    <img src="https://raw.githubusercontent.com/Taka0330-jp/outfitted-email/main/img/google-badge.png"
+                      width="135" alt="Get it on Google Play">
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 
           <!-- FOOTER TEXT -->
           <tr>
             <td class="footer-text">
-              <p>You’re receiving this email because you subscribed...</p>
-              <p>unsubscribe | privacy policy</p>
-              <p>Full legal text here...</p>
+              <p>You’re receiving this email because you subscribed to Outfitted updates. You can unsubscribe anytime.
+              </p>
+              <p><u>Unsubscribe</u> | <u>Privacy Policy</u></p>
+              <p>This email and any attachments may contain confidential information intended only for the individual or
+                entity to which it is addressed. If you are not the intended recipient, please notify the sender
+                immediately and delete this email.</p>
               <p>View in browser</p>
-              <p>Company Address</p>
+              <p>Outfitted Comm<br>
+                48 Meat Creative Warehouse<br>
+                Portland, OR 97205<br>
+                Canada
+              </p>
               <p>© 2025 Outfitted. All Rights Reserved.</p>
             </td>
           </tr>
@@ -154,4 +407,5 @@
   </table>
 
 </body>
+
 </html>
